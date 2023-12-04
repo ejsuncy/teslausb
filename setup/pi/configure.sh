@@ -133,6 +133,14 @@ function check_archive_configs () {
             check_variable "ARCHIVE_SERVER"
             check_rsync
             ;;
+        ceph)
+            check_variable "FS_PATH"
+            check_variable "CEPH_CLIENT"
+            check_variable "CEPH_SECRET"
+            check_variable "ARCHIVE_SERVER"
+            check_variable "ARCHIVE_SERVER_PORT"
+            check_rsync
+            ;;
         none)
             export ARCHIVE_SERVER=localhost
             ;;
