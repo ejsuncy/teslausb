@@ -23,7 +23,7 @@ export SHARE_PASSWORD='password'
 # export CIFS_SEC="ntlm"
 
 # Variables for CEPHFS archiving.
-#export ARCHIVE_SYSTEM=cephfs
+#export ARCHIVE_SYSTEM=ceph
 #export ARCHIVE_SERVER=192.168.0.100
 #export ARCHIVE_SERVER_PORT=6789
 # Whatever your cephfs mount path is on the cephFS server
