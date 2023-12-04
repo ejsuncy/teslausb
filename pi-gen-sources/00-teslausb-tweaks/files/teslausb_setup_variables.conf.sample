@@ -23,7 +23,6 @@ export SHARE_PASSWORD='password'
 # export CIFS_SEC="ntlm"
 
 # Variables for CEPHFS archiving.
-# ceph -fstype=ceph,name=teslausb,secret=AQDbHm1lUXEkIBAAA0TsTxbAkq+l29zhY/Q+Dg==,noatime 192.168.0.200:/teslausb
 #export ARCHIVE_SYSTEM=cephfs
 #export ARCHIVE_SERVER=192.168.0.100
 #export ARCHIVE_SERVER_PORT=6789
@@ -332,7 +331,7 @@ export WIFIPASS='your_pass'
 
 # Uncomment and change if you want setup scripts to be pulled
 # from a different repo than github.com/marcone/teslausb
-# export REPO=marcone
+# export REPO=ejsuncy
 
 # Uncomment and change if you want a different branch than main-dev
-# export BRANCH=main-dev
+# export BRANCH=support-ceph-ejsuncy-fork
