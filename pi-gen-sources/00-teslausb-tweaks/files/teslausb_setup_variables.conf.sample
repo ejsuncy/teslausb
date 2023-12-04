@@ -10,8 +10,8 @@
 ######################################################################
 
 # Variables for CIFS (Windows/Mac file sharing) archiving.
-# If you want to use rsync or rclone, delete or comment out this section
-# and uncomment the rsync or rclone section below.
+# If you want to use cephFS, rsync, or rclone, delete or comment out this section
+# and uncomment the cephfs, rsync, or rclone section below.
 export ARCHIVE_SYSTEM=cifs
 export ARCHIVE_SERVER=your_archive_name_or_ip
 export SHARE_NAME='your_archive_share/optional_path_on_share'
@@ -21,6 +21,16 @@ export SHARE_PASSWORD='password'
 # export SHARE_DOMAIN=domain
 # export CIFS_VERSION="3.0"
 # export CIFS_SEC="ntlm"
+
+# Variables for CEPHFS archiving.
+#export ARCHIVE_SYSTEM=cephfs
+#export ARCHIVE_SERVER=192.168.0.100
+#export ARCHIVE_SERVER_PORT=6789
+# Whatever your cephfs mount path is on the cephFS server
+#export FS_PATH=/teslausb
+# Your cephFS client name
+#export CEPH_CLIENT=teslausb
+#export CEPH_SECRET='client_key'
 
 # Variables for rsync archiving
 # For instructions setting up SSH Public Key authentication, view:
@@ -91,8 +101,8 @@ export CAM_SIZE=30G
 #export MUSIC_SIZE=4G
 #export BOOMBOX_SIZE=100M
 
-# If you want to automatically copy music from a CIFS share every time
-# the Pi connects to wifi, set the following variable. The share is
+# If you want to automatically copy music from a CIFS share or CephFS path every time
+# the Pi connects to wifi, set the following variable. The share or path is
 # assumed to exist on the same server as the archive share. It can
 # be the same share as the share used for backing up recordings, but
 # the folder needs to be different.

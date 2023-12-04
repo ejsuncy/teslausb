@@ -157,6 +157,9 @@ function get_archive_module () {
         cifs)
             echo "run/cifs_archive"
             ;;
+        ceph)
+            echo "run/ceph_archive"
+            ;;
         none)
             echo "run/none_archive"
             ;;
